@@ -1,9 +1,9 @@
 $(document).ready(function(e) {
 
     /* browser height */
-    $(window).bind("load resize", function(e) {
+    $(window).bind("load resize ready", function(e) {
 
-        $('.hero').css("height", $(window).height() * 1);
+        $('.hero, .browser-height').css("min-height", $(window).height() * 1);
 
     });
 

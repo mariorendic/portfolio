@@ -32,9 +32,6 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#blog">Blog</a>
-                </li>
-                <li>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
@@ -48,66 +45,107 @@
             <h1>Mario Rendić</h1>
             <h2>Front End Developer</h2>
         </section>
-        <section class="container">
-            <div class="col-12 center">
-                <a name="portfolio"></a>
+        <a name="portfolio"></a>
+        <section class="container portfolio browser-height">
+            <div class="col-12 center title">
                 <h1>Portfolio</h1>
                 <p>Check out some of my latest work.</p>
-                <i class="fas fa-code"></i>
+                <i class="fas fa-code fa-2x"></i>
             </div>
             <article class="col-4">
-                <h2>Project 1</h2>
+                <a href="https://www.sea-sense-charter.com/" target="_blank">
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="img/sea-sense-logo.svg" alt="Sea Sense Charter">
+                        </div>
+                        <div class="item-text">
+                            <h2>Sea Sense Charter</h2>
+                            <p>
+                                WordPress custom designed and coded template
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </article>
             <article class="col-4">
-                <h2>Project 2</h2>
+                <a href="https://www.aktivator.hr/" target="_blank">
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="img/aktivator-logo.svg" alt="Sea Sense Charter">
+                        </div>
+                        <div class="item-text">
+                            <h2>Aktivator</h2>
+                            <p>
+                                Front end and Back end development custom template
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </article>
             <article class="col-4">
-                <h2>Project 3</h2>
+                <a href="https://osoje-commerce.hr/" target="_blank">
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="img/osoje-logo.png" alt="Sea Sense Charter">
+                        </div>
+                        <div class="item-text">
+                            <h2>OS Jeans</h2>
+                            <p>
+                                WordPress custom designed and coded template
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </article>
         </section>
-        <section class="container">
-            <div class="col-12 center">
-                <a name="about"></a>
+        <div class="big-border"></div>
+        <a name="about"></a>
+        <article class="container browser-height">
+            <div class="col-12 center title">
                 <h1>About</h1>
                 <p>Some interesting facts about me.</p>
+                <i class="fas fa-info fa-2x"></i>
+            </div>
+            <div class="col-12">
                 <p>
-                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc enim, finibus at tempor quis, sollicitudin at ligula. Donec luctus malesuada scelerisque. Quisque consequat ipsum quis lectus laoreet accumsan. Sed et ullamcorper nulla, at convallis enim. Fusce sit amet ex id tortor molestie volutpat. Nulla at ipsum id quam malesuada molestie. Vestibulum sed dui congue justo accumsan suscipit. Nunc dictum mauris ut blandit suscipit. Fusce mollis tincidunt quam, nec viverra quam fringilla sed. Sed a dolor sed magna vulputate molestie.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc enim, finibus at tempor quis, sollicitudin at ligula. Donec luctus malesuada scelerisque. Quisque consequat ipsum quis lectus laoreet accumsan. Sed et ullamcorper nulla, at convallis enim. Fusce sit amet ex id tortor molestie volutpat. Nulla at ipsum id quam malesuada molestie. Vestibulum sed dui congue justo accumsan suscipit. Nunc dictum mauris ut blandit suscipit. Fusce mollis tincidunt quam, nec viverra quam fringilla sed. Sed a dolor sed magna vulputate molestie.
                 </p>
                 <p>
                     Integer at dolor vitae augue vehicula elementum. Curabitur lobortis vulputate ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vitae mollis metus. In hac habitasse platea dictumst. Integer pulvinar tortor in orci luctus, at molestie dui semper. Sed accumsan viverra ipsum id egestas. Quisque justo quam, faucibus eget consequat non, ullamcorper at ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </div>
-        </section>
-        <section class="container">
-            <div class="col-12 center">
-                <a name="blog"></a>
-                <h1>Blog</h1>
-                <p>Get to know me through my Blog.</p>
-            </div>
-            <article class="col-4">
-                <h2>Blog 1</h2>
-            </article>
-            <article class="col-4">
-                <h2>Blog 2</h2>
-            </article>
-            <article class="col-4">
-                <h2>Blog 3</h2>
-            </article>
-        </section>
-        <section class="container">
-            <a name="contact"></a>
-            <div class="col-12 center">
+        </article>
+        <div class="big-border"></div>
+        <a name="contact"></a>
+        <section class="container browser-height">
+            <div class="col-12 center title">
                 <h1>Contact</h1>
                 <p>Hire me or ask me anything.</p>
+                <i class="far fa-envelope fa-2x"></i>
             </div>
             <article class="col-4">
-                <h2>Phone</h2>
+                <h2 class="center">Phone</h2>
             </article>
             <article class="col-4">
-                <h2>Contact form</h2>
+                <h2 class="center">Contact form</h2>
+                <div class="contact-form">
+                    <form>
+                        <label>Name</label>
+                        <input type="text" name="name">
+                        <label>E-mail</label>
+                        <input type="email" name="email">
+                         <label>Title</label>
+                        <input type="text" name="title">
+                        <label>Message</label>
+                        <textarea name="Message"></textarea>
+                        <div class="center">
+                        <button name="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </article>
             <article class="col-4">
-                <h2>Networks</h2>
+                <h2 class="center">Networks</h2>
             </article>
         </section>
     </main>
