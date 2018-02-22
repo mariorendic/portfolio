@@ -95,6 +95,7 @@ nav ul li {
 }
 
 nav * a {
+        display: inline-block;
     text-decoration: none;
     color: inherit;
     padding: 10px 20px;
