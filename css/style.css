@@ -103,8 +103,9 @@ nav * a {
     transition: .5s ease;
 }
 nav * a:hover {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(0,0,0,.8);
     transition: .5 ease;
+    color: #FFF;
 }
 .center {
     text-align: center;
@@ -311,6 +312,7 @@ footer {
     .header-scroll {
         background-color: rgba(255, 255, 255, .9);
         transition: .5s ease;
+        box-shadow: 0px 0px 17px #0000006b;
     }
     nav {
         position: initial;
