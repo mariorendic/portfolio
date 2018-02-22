@@ -13,7 +13,7 @@ $(document).ready(function(e) {
         $("nav").toggleClass("nav-open");
         $(".overlay").toggleClass("overlay-on");
     });
- 
+
 
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
@@ -30,7 +30,17 @@ $(document).ready(function(e) {
             }
         });
 
+    });
 
+    $(window).bind("load resize scroll", function(e) {
+
+        if ($(window).scrollTop() > 130) {
+            $('header').addClass('header-scroll');
+
+        } else {
+            $('header').removeClass('header-scroll');
+
+        }
     });
 
 });
