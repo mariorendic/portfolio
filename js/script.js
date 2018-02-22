@@ -1,14 +1,14 @@
 $(document).ready(function(e) {
 
     /* browser height */
-    $(window).bind("load resize ready", function(e) {
+    $(window).bind("load resize ready", function() {
 
         $('.hero, .browser-height').css("min-height", $(window).height() * 1);
 
     });
 
 
-    $("#nav-toggle, .overlay, nav a").click(function(e) {
+    $("#nav-toggle, .overlay, nav a").click(function() {
         e.preventDefault();
         $("nav").toggleClass("nav-open");
         $(".overlay").toggleClass("overlay-on");
@@ -32,7 +32,7 @@ $(document).ready(function(e) {
 
     });
 
-    $(window).bind("load resize scroll", function(e) {
+    $(window).bind("load resize scroll", function() {
 
         if ($(window).scrollTop() > 130) {
             $('header').addClass('header-scroll');
