@@ -98,8 +98,13 @@ nav * a {
     text-decoration: none;
     color: inherit;
     padding: 10px 20px;
+        background-color: rgba(255,255,255,0);
+    transition: .5s ease;
 }
-
+nav * a:hover {
+    background-color: rgba(255,255,255,1);
+    transition: .5 ease;
+}
 .center {
     text-align: center;
 }
@@ -194,6 +199,10 @@ Contact form
 
 */
 
+.contact article p {
+    padding: 1em 0;
+}
+
 .contact-form label,
 .contact-form input,
 .contact-form textarea {
@@ -241,50 +250,7 @@ footer {
 }
 
 @media (min-width: 760px) {
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255, .5);
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    nav {
-        position: initial;
-        background-color: transparent;
-        top: initial;
-        right: initial;
-        bottom: initial;
-        transform: initial;
-        width: initial;
-    }
-
-    nav ul li {
-        display: inline-block;
-        padding: 0 10px;
-    }
-
-    #nav-toggle {
-        display: none;
-    }
-    .overlay {
-        display: none;
-    }
-    .hero {
-        background-attachment: fixed;
-    }
-    .item {
-        padding-bottom: initial;
-    }
-    .item-image {
-        flex-grow: 1;
-    }
-}
-
-@media (min-width: 1024px) {
-    .col-1 {
+     .col-1 {
         width: 8.33%;
     }
 
@@ -331,4 +297,51 @@ footer {
     .col-12 {
         width: 100%;
     }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, .5);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        position: initial;
+        background-color: transparent;
+        top: initial;
+        right: initial;
+        bottom: initial;
+        transform: initial;
+        width: initial;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+    .overlay {
+        display: none;
+    }
+    .hero {
+        background-attachment: fixed;
+    }
+    .item {
+        padding-bottom: initial;
+    }
+    .item-image {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+   body {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
 }
